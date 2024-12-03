@@ -1,0 +1,899 @@
+{
+  "name": "OLX Indonesia",
+  "code": "olxid",
+  "currency": "idr",
+  "country": "ID",
+  "enabled": true,
+  "startFromZero": {
+    "default": true
+  },
+  "adaptiveBannerHeightPercentage": {
+    "default": {
+      "default": {
+        "default": 60
+      }
+    }
+  },
+  "refreshEnabled": {
+    "default": false,
+    "results": true,
+    "home": true
+  },
+  "bucketOffset": {
+    "lowerBucket": 1,
+    "upperBucket": 0
+  },
+  "buckets": {
+    "generic_buckets": [
+      0,
+      50,
+      100,
+      200,
+      300,
+      500,
+      1000,
+      1500,
+      2000,
+      3000,
+      5000,
+      10000,
+      20000,
+      50000,
+      100000,
+      200000,
+      500000,
+      1000000,
+      10000000,
+      100000000,
+      1000000000,
+      2000000000
+    ],
+    "price_buckets": [
+      0,
+      500000,
+      1000000,
+      1500000,
+      2000000,
+      4000000,
+      6000000,
+      8000000,
+      10000000,
+      12000000,
+      14000000,
+      16000000,
+      18000000,
+      20000000,
+      40000000,
+      60000000,
+      80000000,
+      100000000,
+      120000000,
+      140000000,
+      160000000,
+      180000000,
+      200000000,
+      300000000,
+      400000000,
+      500000000,
+      600000000,
+      700000000,
+      800000000,
+      900000000,
+      1000000000,
+      1500000000,
+      2000000000,
+      2500000000,
+      3000000000,
+      3500000000,
+      4000000000,
+      4500000000,
+      5000000000,
+      5500000000,
+      6000000000,
+      6500000000,
+      7000000000,
+      7500000000,
+      8000000000,
+      8500000000,
+      9000000000,
+      9500000000,
+      10000000000,
+      10500000000,
+      11000000000,
+      11500000000,
+      12000000000,
+      12500000000,
+      13000000000,
+      13500000000,
+      14000000000,
+      14500000000,
+      15000000000,
+      15500000000,
+      16000000000,
+      16500000000,
+      17000000000,
+      17500000000,
+      18000000000,
+      18500000000,
+      19000000000,
+      19500000000,
+      20000000000,
+      20500000000,
+      21000000000,
+      21500000000,
+      22000000000,
+      22500000000,
+      23000000000,
+      23500000000,
+      24000000000,
+      24500000000,
+      25000000000,
+      25500000000,
+      26000000000,
+      26500000000,
+      27000000000,
+      27500000000,
+      28000000000,
+      28500000000,
+      29000000000,
+      29500000000,
+      30000000000
+    ]
+  },
+  "enabledIn": {
+    "default": {
+      "default": true
+    }
+  },
+  "slots": {
+    "dfp": {
+      "size": {
+        "default": {
+          "default": [
+            "INLINE_ADAPTIVE_BANNER",
+            "BANNER",
+            "LARGE_BANNER",
+            "MEDIUM_RECTANGLE"
+          ]
+        },
+        "results": {
+          "default": [
+            "INLINE_ADAPTIVE_BANNER",
+            "BANNER",
+            "LARGE_BANNER",
+            "MEDIUM_RECTANGLE"
+          ],
+          "sticky": [
+            "BANNER",
+            "LARGE_BANNER"
+          ]
+        },
+        "details": {
+          "default": [
+            "BANNER",
+            "LARGE_BANNER",
+            "MEDIUM_RECTANGLE"
+          ],
+          "middle": [
+            "BANNER",
+            "LARGE_BANNER",
+            "MEDIUM_RECTANGLE",
+            "FLUID"
+          ],
+          "top": [
+            "BANNER",
+            "LARGE_BANNER",
+            "FLUID"
+          ]
+        }
+      },
+      "bannerOnly": {
+        "default": {
+          "default": false
+        },
+        "details": {
+          "default": false,
+          "middle": true,
+          "top": true
+        },
+        "results": {
+          "default": false,
+          "sticky": true
+        }
+      },
+      "targeting": {
+        "default": {
+          "default": [
+            {
+              "key": "business_region",
+              "type": "static",
+              "value": "asia"
+            },
+            {
+              "key": "country_code",
+              "type": "static",
+              "value": "ID"
+            },
+            {
+              "key": "app_brand",
+              "type": "static",
+              "value": "olx"
+            },
+            {
+              "key": "currency",
+              "type": "static",
+              "value": "idr"
+            },
+            {
+              "key": "debug",
+              "type": "param",
+              "value": "debug"
+            },
+            {
+              "key": "environment",
+              "type": "param",
+              "value": "environment"
+            },
+            {
+              "key": "app_version",
+              "type": "param",
+              "value": "app_version"
+            },
+            {
+              "key": "visualisation",
+              "type": "param",
+              "value": "visualisation"
+            },
+            {
+              "key": "neighbourhood",
+              "type": "param",
+              "value": "neighbourhood"
+            },
+            {
+              "key": "city",
+              "type": "param",
+              "value": "city"
+            },
+            {
+              "key": "state",
+              "type": "param",
+              "value": "state"
+            },
+            {
+              "key": "country",
+              "type": "param",
+              "value": "country"
+            },
+            {
+              "key": "user_id",
+              "type": "param",
+              "value": "user_id"
+            }
+          ]
+        },
+        "details": {
+          "default": [
+            {
+              "key": "business_region",
+              "type": "static",
+              "value": "asia"
+            },
+            {
+              "key": "country_code",
+              "type": "static",
+              "value": "ID"
+            },
+            {
+              "key": "app_brand",
+              "type": "static",
+              "value": "olx"
+            },
+            {
+              "key": "currency",
+              "type": "static",
+              "value": "idr"
+            },
+            {
+              "key": "debug",
+              "type": "param",
+              "value": "debug"
+            },
+            {
+              "key": "lang",
+              "type": "param",
+              "value": "lang"
+            },
+            {
+              "key": "environment",
+              "type": "param",
+              "value": "environment"
+            },
+            {
+              "key": "app_version",
+              "type": "param",
+              "value": "app_version"
+            },
+            {
+              "key": "visualisation",
+              "type": "param",
+              "value": "visualisation"
+            },
+            {
+              "key": "neighbourhood",
+              "type": "param",
+              "value": "neighbourhood"
+            },
+            {
+              "key": "city",
+              "type": "param",
+              "value": "city"
+            },
+            {
+              "key": "state",
+              "type": "param",
+              "value": "state"
+            },
+            {
+              "key": "country",
+              "type": "param",
+              "value": "country"
+            },
+            {
+              "key": "user_id",
+              "type": "param",
+              "value": "user_id"
+            },
+            {
+              "key": "site_cat_1",
+              "type": "param",
+              "value": "site_cat_1"
+            },
+            {
+              "key": "site_cat_2",
+              "type": "param",
+              "value": "site_cat_2"
+            },
+            {
+              "key": "site_cat_3",
+              "type": "param",
+              "value": "make"
+            },
+            {
+              "key": "site_cat_3",
+              "type": "param",
+              "value": "type"
+            },
+            {
+              "key": "make",
+              "type": "param",
+              "value": "make"
+            },
+            {
+              "key": "m_body",
+              "type": "param",
+              "value": "m_body"
+            },
+            {
+              "key": "m_color",
+              "type": "param",
+              "value": "m_color"
+            },
+            {
+              "key": "m_drivetrain",
+              "type": "param",
+              "value": "m_drivetrain"
+            },
+            {
+              "key": "m_engine_capacity",
+              "type": "param",
+              "value": "m_engine_capacity"
+            },
+            {
+              "key": "m_exchange",
+              "type": "param",
+              "value": "m_exchange"
+            },
+            {
+              "key": "m_fuel",
+              "type": "param",
+              "value": "m_fuel"
+            },
+            {
+              "key": "m_seller_type",
+              "type": "param",
+              "value": "m_seller_type"
+            },
+            {
+              "key": "m_tipe",
+              "type": "param",
+              "value": "m_tipe"
+            },
+            {
+              "key": "m_tipe_variant",
+              "type": "param",
+              "value": "m_tipe_variant"
+            },
+            {
+              "key": "m_transmission",
+              "type": "param",
+              "value": "m_transmission"
+            },
+            {
+              "key": "m_year",
+              "type": "param",
+              "value": "m_year"
+            },
+            {
+              "key": "p_bathroom",
+              "type": "param",
+              "value": "p_bathroom"
+            },
+            {
+              "key": "p_bedroom",
+              "type": "param",
+              "value": "p_bedroom"
+            },
+            {
+              "key": "p_certificate",
+              "type": "param",
+              "value": "p_certificate"
+            },
+            {
+              "key": "p_floor",
+              "type": "param",
+              "value": "p_floor"
+            },
+            {
+              "key": "p_sqr_building",
+              "type": "param",
+              "value": "p_sqr_building"
+            },
+            {
+              "key": "p_sqr_land",
+              "type": "param",
+              "value": "p_sqr_land"
+            },
+            {
+              "key": "type",
+              "type": "param",
+              "value": "type"
+            },
+            {
+              "key": "seller_id",
+              "type": "param",
+              "value": "seller_id"
+            },
+            {
+              "key": "ad_id",
+              "type": "param",
+              "value": "ad_id"
+            },
+            {
+              "key": "own_ad",
+              "type": "param",
+              "value": "own_ad"
+            },
+            {
+              "key": "replies_to_ad",
+              "type": "param",
+              "value": "replies_to_ad"
+            },
+            {
+              "key": "is_featured_ad",
+              "type": "param",
+              "value": "is_featured_ad"
+            },
+            {
+              "key": "listing_title",
+              "type": "param",
+              "value": "listing_title"
+            },
+            {
+              "key": "price_idr",
+              "type": "param",
+              "value": "price"
+            },
+            {
+              "key": "ad_neighbourhood",
+              "type": "param",
+              "value": "ad_neighbourhood"
+            },
+            {
+              "key": "ad_city",
+              "type": "param",
+              "value": "ad_city"
+            },
+            {
+              "key": "ad_state",
+              "type": "param",
+              "value": "ad_state"
+            },
+            {
+              "key": "ad_country",
+              "type": "param",
+              "value": "ad_country"
+            },
+            {
+              "key": "p_sqr_building_band",
+              "type": "bucket",
+              "value": "generic_buckets:p_sqr_building"
+            },
+            {
+              "key": "p_sqr_land_band",
+              "type": "bucket",
+              "value": "generic_buckets:p_sqr_land"
+            },
+            {
+              "key": "price_band_idr",
+              "type": "bucket",
+              "value": "price_buckets:price"
+            }
+          ]
+        },
+        "results": {
+          "default": [
+            {
+              "key": "business_region",
+              "type": "static",
+              "value": "asia"
+            },
+            {
+              "key": "country_code",
+              "type": "static",
+              "value": "ID"
+            },
+            {
+              "key": "app_brand",
+              "type": "static",
+              "value": "olx"
+            },
+            {
+              "key": "currency",
+              "type": "static",
+              "value": "idr"
+            },
+            {
+              "key": "debug",
+              "type": "param",
+              "value": "debug"
+            },
+            {
+              "key": "lang",
+              "type": "param",
+              "value": "lang"
+            },
+            {
+              "key": "environment",
+              "type": "param",
+              "value": "environment"
+            },
+            {
+              "key": "app_version",
+              "type": "param",
+              "value": "app_version"
+            },
+            {
+              "key": "visualisation",
+              "type": "param",
+              "value": "visualisation"
+            },
+            {
+              "key": "neighbourhood",
+              "type": "param",
+              "value": "neighbourhood"
+            },
+            {
+              "key": "city",
+              "type": "param",
+              "value": "city"
+            },
+            {
+              "key": "state",
+              "type": "param",
+              "value": "state"
+            },
+            {
+              "key": "country",
+              "type": "param",
+              "value": "country"
+            },
+            {
+              "key": "user_id",
+              "type": "param",
+              "value": "user_id"
+            },
+            {
+              "key": "site_cat_1",
+              "type": "param",
+              "value": "site_cat_1"
+            },
+            {
+              "key": "site_cat_2",
+              "type": "param",
+              "value": "site_cat_2"
+            },
+            {
+              "key": "site_cat_3",
+              "type": "param",
+              "value": "make"
+            },
+            {
+              "key": "site_cat_3",
+              "type": "param",
+              "value": "type"
+            },
+            {
+              "key": "make",
+              "type": "param",
+              "value": "make"
+            },
+            {
+              "key": "m_body",
+              "type": "param",
+              "value": "m_body"
+            },
+            {
+              "key": "m_color",
+              "type": "param",
+              "value": "m_color"
+            },
+            {
+              "key": "m_drivetrain",
+              "type": "param",
+              "value": "m_drivetrain"
+            },
+            {
+              "key": "m_engine_capacity",
+              "type": "param",
+              "value": "m_engine_capacity"
+            },
+            {
+              "key": "m_exchange",
+              "type": "param",
+              "value": "m_exchange"
+            },
+            {
+              "key": "m_fuel",
+              "type": "param",
+              "value": "m_fuel"
+            },
+            {
+              "key": "m_seller_type",
+              "type": "param",
+              "value": "m_seller_type"
+            },
+            {
+              "key": "m_tipe",
+              "type": "param",
+              "value": "m_tipe"
+            },
+            {
+              "key": "m_tipe_variant",
+              "type": "param",
+              "value": "m_tipe_variant"
+            },
+            {
+              "key": "m_transmission",
+              "type": "param",
+              "value": "m_transmission"
+            },
+            {
+              "key": "m_year",
+              "type": "range",
+              "value": "m_year"
+            },
+            {
+              "key": "p_bathroom",
+              "type": "param",
+              "value": "p_bathroom"
+            },
+            {
+              "key": "p_bedroom",
+              "type": "param",
+              "value": "p_bedroom"
+            },
+            {
+              "key": "p_certificate",
+              "type": "param",
+              "value": "p_certificate"
+            },
+            {
+              "key": "p_floor",
+              "type": "param",
+              "value": "p_floor"
+            },
+            {
+              "key": "type",
+              "type": "param",
+              "value": "type"
+            },
+            {
+              "key": "search_term",
+              "type": "param",
+              "value": "search_term"
+            },
+            {
+              "key": "p_sqr_building_band",
+              "type": "bucket",
+              "value": "generic_buckets:p_sqr_building"
+            },
+            {
+              "key": "p_sqr_land_band",
+              "type": "bucket",
+              "value": "generic_buckets:p_sqr_land"
+            },
+            {
+              "key": "price_band_idr",
+              "type": "bucket",
+              "value": "price_buckets:price"
+            }
+          ]
+        },
+        "home": {
+          "default": [
+            {
+              "key": "business_region",
+              "type": "static",
+              "value": "asia"
+            },
+            {
+              "key": "country_code",
+              "type": "static",
+              "value": "ID"
+            },
+            {
+              "key": "app_brand",
+              "type": "static",
+              "value": "olx"
+            },
+            {
+              "key": "currency",
+              "type": "static",
+              "value": "idr"
+            },
+            {
+              "key": "debug",
+              "type": "param",
+              "value": "debug"
+            },
+            {
+              "key": "lang",
+              "type": "param",
+              "value": "lang"
+            },
+            {
+              "key": "environment",
+              "type": "param",
+              "value": "environment"
+            },
+            {
+              "key": "app_version",
+              "type": "param",
+              "value": "app_version"
+            },
+            {
+              "key": "visualisation",
+              "type": "param",
+              "value": "visualisation"
+            },
+            {
+              "key": "neighbourhood",
+              "type": "param",
+              "value": "neighbourhood"
+            },
+            {
+              "key": "city",
+              "type": "param",
+              "value": "city"
+            },
+            {
+              "key": "state",
+              "type": "param",
+              "value": "state"
+            },
+            {
+              "key": "country",
+              "type": "param",
+              "value": "country"
+            },
+            {
+              "key": "user_id",
+              "type": "param",
+              "value": "user_id"
+            }
+          ]
+        }
+      },
+      "path": {
+        "results": {
+          "default": [
+            [
+              "{site_cat_1}_lpv",
+              "{site_cat_2}"
+            ],
+            [
+              "{site_cat_1}_lpv"
+            ],
+            [
+              "all-categories"
+            ]
+          ],
+          "sticky": [
+            [
+              "{site_cat_1}_lpv/Sticky_banner"
+            ]
+          ]
+        },
+        "details": {
+          "default": [
+            [
+              "{site_cat_1}_dpv",
+              "{site_cat_2}"
+            ],
+            [
+              "{site_cat_1}_dpv"
+            ],
+            [
+              "details"
+            ]
+          ]
+        },
+        "home": {
+          "default": [
+            [
+              "home"
+            ]
+          ]
+        },
+        "default": {
+          "default": [
+            [
+              "default"
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "assignment": {
+    "default": {
+      "default": {
+        "default": "dfp"
+      }
+    }
+  },
+  "prefetchEnabled": {
+    "default": {
+      "default": "false"
+    },
+    "results": {
+      "default": "false",
+      "middle": true
+    },
+    "home": {
+      "default": "false",
+      "middle": true
+    }
+  },
+  "intervals": {
+    "default": [],
+    "home": [
+      2,
+      8
+    ],
+    "results": [
+      2,
+      8
+    ]
+  },
+  "providers": {
+    "dfp": {
+      "prefix": [
+        [
+          "2300056",
+          "id_ios"
+        ]
+      ]
+    }
+  }
+}
