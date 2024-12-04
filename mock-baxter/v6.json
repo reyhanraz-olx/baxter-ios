@@ -193,9 +193,7 @@
           "default": [
             "BANNER",
             "LARGE_BANNER",
-            "MEDIUM_RECTANGLE",
-            "FLUID",
-            "INLINE_ADAPTIVE_BANNER"
+            "MEDIUM_RECTANGLE"
           ]
         }
       },
