@@ -209,9 +209,6 @@
         "results": {
           "default": false,
           "sticky": true
-        },
-        "posting": {
-          "default": false
         }
       },
       "targeting": {
