@@ -11,9 +11,6 @@
     "default": {
       "default": {
         "default": 60
-      },
-      "posting": {
-          "default": 480
       }
     }
   },
@@ -195,20 +192,26 @@
             "LARGE_BANNER",
             "MEDIUM_RECTANGLE"
           ]
+        },
+        "self_inspection": {
+          "default": [
+            "BANNER",
+            "LARGE_BANNER",
+            "MEDIUM_RECTANGLE"
+          ]
         }
       },
-      "bannerOnly": {
+      "adType": {
         "default": {
-          "default": false
+          "default": "banner"
         },
-        "details": {
-          "default": false,
-          "middle": true,
-          "top": true
+        "home": {
+          "default": "banner",
+          "native-middle": "custom_native"
         },
         "results": {
-          "default": false,
-          "sticky": true
+          "default": "banner",
+          "native-middle": "custom_native"
         }
       },
       "targeting": {
@@ -856,11 +859,20 @@
           ]
         },
         "posting": {
-            "default": [
-              [
-                "app_ios"
-              ]
+          "default": [
+            [
+              "posting",
+              "trial_listing"
             ]
+          ]
+        },
+        "self_inspection": {
+          "default": [
+            [
+              "posting",
+              "trial_listing"
+            ]
+          ]
         },
         "default": {
           "default": [
@@ -868,6 +880,18 @@
               "default"
             ]
           ]
+        }
+      },
+      "amazonSlot": {
+        "home": {
+          "middle": {
+            "default": "0ff5ccf9-cf31-478a-9ef5-1a3b519959c5"
+          }
+        },
+        "results": {
+          "middle": {
+            "default": "cd2344fc-3380-4c22-986c-695861affb32"
+          }
         }
       }
     }
@@ -885,32 +909,154 @@
     },
     "results": {
       "default": "false",
-      "middle": true
+      "middle": true,
+      "native-middle": true
     },
     "home": {
       "default": "false",
-      "middle": true
+      "middle": true,
+      "native-middle": true
     }
   },
   "intervals": {
-    "default": [],
-    "home": [
-      2,
-      8
-    ],
-    "results": [
-      2,
-      8
-    ]
+    "default": {
+      "default": [
+        2,
+        8
+      ]
+    },
+    "results": {
+      "default": [
+        2,
+        8
+      ],
+      "native-middle": [
+        1,
+        5,
+        15,
+        5
+      ]
+    },
+    "home": {
+      "default": [
+        2,
+        8
+      ],
+      "native-middle": [
+        1,
+        4,
+        18,
+        2,
+        24,
+        2,
+        18,
+        2,
+        24,
+        2
+      ]
+    }
+  },
+  "nativeAdsCount": {
+    "results": {
+      "default": 4
+    },
+    "home": {
+      "default": 10
+    }
   },
   "providers": {
     "dfp": {
       "prefix": [
         [
           "2300056",
-          "Testing_Trial_Listing"
+          "id_ios"
+        ]
+      ],
+      "templates": [
+        {
+          "id": "12461674",
+          "type": "native_mobile_home"
+        },
+        {
+          "id": "12490280",
+          "type": "native_mobile_srp"
+        }
+      ]
+    }
+  },
+  "interstitialAdEnabled": {
+    "default": {
+      "default": true
+    },
+    "gallery": {
+      "default": true
+    },
+    "OLXMobbiGallery": {
+      "default": false
+    }
+  },
+  "interstitialSlots": {
+    "dfp": {
+      "path": {
+        "gallery": {
+          "default": [
+            [
+              "{site_cat_1}_dpv",
+              "{site_cat_2}/image_gallery_end"
+            ],
+            [
+              "{site_cat_1}_dpv/image_gallery_end"
+            ],
+            [
+              "details/image_gallery_end"
+            ]
+          ]
+        },
+        "default": {
+          "default": [
+            [
+              "default/image_gallery_end"
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "interstitialPrefetchCount": {
+    "default": {
+      "default": 1
+    },
+    "gallery": {
+      "default": 1
+    }
+  },
+  "interstitialIntervals": {
+    "default": {
+      "default": [
+        3
+      ]
+    },
+    "gallery": {
+      "default": [
+        0
+      ]
+    }
+  },
+  "providersInterstitial": {
+    "dfp": {
+      "prefix": [
+        [
+          "2300056",
+          "id_ios"
         ]
       ]
+    }
+  },
+  "assignmentInterstitial": {
+    "default": {
+      "default": {
+        "default": "dfp"
+      }
     }
   }
 }
