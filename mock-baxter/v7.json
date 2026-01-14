@@ -974,15 +974,15 @@
       ],
       "templates": [
         {
-          "id": "12461674",
+          "id": "12484072",
           "type": "native_mobile_home"
         },
         {
-          "id": "12490280",
+          "id": "12484069",
           "type": "native_mobile_srp"
         },
         {
-          "id": "12473031",
+          "id": "12484051",
           "type": "native_for_mobile_app_srp_car"
         }
       ]
