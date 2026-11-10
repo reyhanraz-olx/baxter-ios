@@ -143,6 +143,9 @@
   "enabledIn": {
     "default": {
       "default": true
+    },
+    "subHome": {
+      "default": true
     }
   },
   "slots": {
@@ -159,6 +162,11 @@
         "results": {
           "default": [
             "INLINE_ADAPTIVE_BANNER",
+            "BANNER",
+            "LARGE_BANNER",
+            "MEDIUM_RECTANGLE"
+          ],
+          "middle": [
             "BANNER",
             "LARGE_BANNER",
             "MEDIUM_RECTANGLE"
@@ -194,6 +202,13 @@
           ]
         },
         "self_inspection": {
+          "default": [
+            "BANNER",
+            "LARGE_BANNER",
+            "MEDIUM_RECTANGLE"
+          ]
+        },
+        "subHome": {
           "default": [
             "BANNER",
             "LARGE_BANNER",
@@ -880,6 +895,13 @@
               "default"
             ]
           ]
+        },
+        "subHome": {
+          "default": [
+            [
+              "{site_cat_2}_hpv"
+            ]
+          ]
         }
       },
       "amazonSlot": {
@@ -983,7 +1005,7 @@
         },
         {
           "id": "12484051",
-          "type": "native_for_mobile_app_srp_car"
+          "type": "native_for_mobile_srp_car"
         }
       ]
     }
